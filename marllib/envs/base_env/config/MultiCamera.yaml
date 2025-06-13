@@ -1,0 +1,6 @@
+
+env: MultiCamera
+
+env_args:
+    "map_name": "8v8-9" 
+
