@@ -100,6 +100,13 @@ except Exception as e:
     COOP_ENV_REGISTRY["mate"] = str(e)
 
 try:
+    from marllib.envs.global_reward_env.multicamera_fcoop import RLlibMultiCamera_FCOOP
+
+    COOP_ENV_REGISTRY["multicamera"] = RLlibMultiCamera_FCOOP
+except Exception as e:
+    COOP_ENV_REGISTRY["multicamera"] = str(e)
+
+try:
     from marllib.envs.global_reward_env.gobigger_fcoop import RLlibGoBigger_FCOOP
 
     COOP_ENV_REGISTRY["gobigger"] = RLlibGoBigger_FCOOP

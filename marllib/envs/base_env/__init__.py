@@ -119,6 +119,13 @@ except Exception as e:
     ENV_REGISTRY["mate"] = str(e)
 
 try:
+    from marllib.envs.base_env.multicamera import RLlibMultiCamera
+
+    ENV_REGISTRY["multicamera"] = RLlibMultiCamera
+except Exception as e:
+    ENV_REGISTRY["multicamera"] = str(e)
+
+try:
     from marllib.envs.base_env.gobigger import RLlibGoBigger
 
     ENV_REGISTRY["gobigger"] = RLlibGoBigger
